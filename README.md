@@ -1,3 +1,14 @@
+
+***
+A Drupal Module to View Routes and Schedule information using MBTA Routes List (Third Party API).
+** **
+
+  - /transport-details
+    - A Drupal page that outputs all routes
+
+  - /transport-details/{id}/{time}
+    - A dynamic Drupal Page which outputs the schedule of a particular route in given time.
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
