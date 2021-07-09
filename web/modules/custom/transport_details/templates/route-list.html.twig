@@ -1,0 +1,16 @@
+
+<table>
+    
+    {% for key,item in info %}
+        <tr><td><b>{{ key }}</b></td></tr>
+        
+        {% for key2, opt in item %}
+        <tr>
+            
+           <td style="background:#{{ opt.color }}; border-spacing: 2px;"> <a href="/transport-details/{{opt.id}}/0"> {{ opt.long_name }}</a></td>
+        </tr>
+        
+        {% endfor %}
+    {% endfor %}
+</table>
+

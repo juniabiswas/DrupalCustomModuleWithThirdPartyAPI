@@ -1,0 +1,42 @@
+{% if page_attributes.route_id != '' %}
+<span style="float:left;">
+    <a class="page-link" href="/transport-details/{{page_attributes.route_id}}/{{page_attributes.prevtime}}">Before I5 minutes</a>
+</span>
+<span style="float:right;">
+    <a class="page-link" href="/transport-details/{{page_attributes.route_id}}/{{page_attributes.nexttime}}">After I5 minutes</a>
+</span>
+
+<div>
+    <table>
+        <thead>
+        <tr> 
+            <th>Destination</th>
+            <th>Arrival</th>
+            <th>Departure</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for key,item in info %}
+            
+            <tr>
+                
+            <td>  {{ item.direction }}</td>
+            <td>  {{ item.arrival_time |date('H:i:s')}}</td>
+            <td>  {{ item.departure_time |date('h:i:s')}}</td>
+
+            </tr>
+            
+        
+        {% endfor %}
+        <tbody>
+    </table>
+</div>
+ 
+<span style="float:left;">
+    <a class="page-link" href="/transport-details/{{page_attributes.route_id}}/{{page_attributes.prevtime}}">Before I5 minutes</a>
+</span>
+<span style="float:right;">
+    <a class="page-link" href="/transport-details/{{page_attributes.route_id}}/{{page_attributes.nexttime}}">After I5 minutes</a>
+</span>
+{% endif %}

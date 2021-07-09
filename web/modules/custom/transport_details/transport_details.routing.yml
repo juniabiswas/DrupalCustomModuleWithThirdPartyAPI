@@ -1,0 +1,14 @@
+transport_details.allRoutes:
+  path: '/transport-details'
+  defaults: 
+    _controller: '\Drupal\transport_details\Controller\TransportDetailsController::allRoutes'
+    _title: 'All Routes'
+  requirements:
+    _permission: 'access content'
+transport_details.schedule:
+  path: '/transport-details/{id}/{time}'
+  defaults: 
+    _controller: '\Drupal\transport_details\Controller\TransportDetailsController::schedule'
+    _title: 'Route Schedule'
+  requirements:
+    _permission: 'access content'

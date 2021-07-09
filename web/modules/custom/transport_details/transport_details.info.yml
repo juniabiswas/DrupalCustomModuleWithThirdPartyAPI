@@ -1,0 +1,4 @@
+name: Transport route list and schedule information
+type: module
+core: '8.x'
+description: 'Get route list and schedule information'
